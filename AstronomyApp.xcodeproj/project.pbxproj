@@ -14,6 +14,12 @@
 		5F8718A728CC4A9F00149810 /* AstronomyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718A628CC4A9F00149810 /* AstronomyAppTests.swift */; };
 		5F8718B128CC4A9F00149810 /* AstronomyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718B028CC4A9F00149810 /* AstronomyAppUITests.swift */; };
 		5F8718B328CC4A9F00149810 /* AstronomyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718B228CC4A9F00149810 /* AstronomyAppUITestsLaunchTests.swift */; };
+		5F8718C328CC4D8B00149810 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718C228CC4D8B00149810 /* NetworkManager.swift */; };
+		5F8718C528CC4EB000149810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718C428CC4EB000149810 /* Constants.swift */; };
+		5F8718C728CC51BA00149810 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718C628CC51B900149810 /* URLExtension.swift */; };
+		5F8718C928CC6E4400149810 /* PictureOfTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718C828CC6E4400149810 /* PictureOfTodayView.swift */; };
+		5F8718CB28CC6F2500149810 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8718CA28CC6F2400149810 /* PhotoInfo.swift */; };
+		5F87DDC828CC9F640024E2E8 /* SelectDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87DDC728CC9F640024E2E8 /* SelectDateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		5F8718AC28CC4A9F00149810 /* AstronomyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8718B028CC4A9F00149810 /* AstronomyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyAppUITests.swift; sourceTree = "<group>"; };
 		5F8718B228CC4A9F00149810 /* AstronomyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F8718C228CC4D8B00149810 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5F8718C428CC4EB000149810 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F8718C628CC51B900149810 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		5F8718C828CC6E4400149810 /* PictureOfTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOfTodayView.swift; sourceTree = "<group>"; };
+		5F8718CA28CC6F2400149810 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		5F87DDC728CC9F640024E2E8 /* SelectDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				5F87189528CC4A9300149810 /* AstronomyAppApp.swift */,
-				5F87189728CC4A9300149810 /* ContentView.swift */,
+				5F8718C128CC4D3800149810 /* Views */,
+				5F8718C028CC4D2E00149810 /* ViewModels */,
+				5F8718BF28CC4D2600149810 /* Models */,
 				5F87189928CC4A9E00149810 /* Assets.xcassets */,
 				5F87189B28CC4A9E00149810 /* Preview Content */,
 			);
@@ -125,6 +139,34 @@
 				5F8718B228CC4A9F00149810 /* AstronomyAppUITestsLaunchTests.swift */,
 			);
 			path = AstronomyAppUITests;
+			sourceTree = "<group>";
+		};
+		5F8718BF28CC4D2600149810 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F8718CA28CC6F2400149810 /* PhotoInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F8718C028CC4D2E00149810 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5F8718C228CC4D8B00149810 /* NetworkManager.swift */,
+				5F8718C428CC4EB000149810 /* Constants.swift */,
+				5F8718C628CC51B900149810 /* URLExtension.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5F8718C128CC4D3800149810 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F87189728CC4A9300149810 /* ContentView.swift */,
+				5F8718C828CC6E4400149810 /* PictureOfTodayView.swift */,
+				5F87DDC728CC9F640024E2E8 /* SelectDateView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8718CB28CC6F2500149810 /* PhotoInfo.swift in Sources */,
+				5F8718C728CC51BA00149810 /* URLExtension.swift in Sources */,
+				5F87DDC828CC9F640024E2E8 /* SelectDateView.swift in Sources */,
+				5F8718C328CC4D8B00149810 /* NetworkManager.swift in Sources */,
 				5F87189828CC4A9300149810 /* ContentView.swift in Sources */,
 				5F87189628CC4A9300149810 /* AstronomyAppApp.swift in Sources */,
+				5F8718C928CC6E4400149810 /* PictureOfTodayView.swift in Sources */,
+				5F8718C528CC4EB000149810 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
