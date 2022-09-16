@@ -71,20 +71,6 @@ class NetworkManager: ObservableObject {
             .store(in: &subscriptions)
         
         
-        
-        
-//            .sink { completion in
-//                switch completion {
-//                case .finished:
-//                    print("fetch complet finished")
-//                case .failure(let failure):
-//                    print("fetch completed with error: \(failure.localizedDescription)")
-//                }
-//            } receiveValue: { (data, response) in
-//                if let description = String(data: data, encoding: .utf8) {
-//                    print ("fetched new data \(description)")
-//                }
-//            }.store(in: &subscriptions)
 
         
         
